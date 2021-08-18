@@ -17,6 +17,12 @@ html {
 body {
   font-family: "Spartan", sans-serif;
   font-weight: 700;
+  background-color: #3a4764;
+}
+
+.container {
+  width: 90%;
+  margin: 3rem auto;
 }
 
 .attribution {

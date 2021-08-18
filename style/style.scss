@@ -8,7 +8,7 @@ $screentext1: hsl(0, 0, 100%);
 
 $keybg1: hsl(30, 25%, 89%);
 $keyshadow1: hsl(28, 16%, 65%);
-$keytext1: hsl(221, 14%, 31%)
+$keytext1: hsl(221, 14%, 31%);
 
 $deletebg1: hsl(225, 21%, 49%);
 $deleteshadow1: hsl(224, 28%, 35%);
@@ -34,6 +34,12 @@ html {
 body {
   font-family: "Spartan", sans-serif;
   font-weight: 700;
+  background-color: $background1;
+}
+
+.container {
+  width: 90%;
+  margin: 3rem auto;
 }
 
 .attribution {
