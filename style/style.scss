@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;600;700&display=swap");
 
 // Theme 1 colors
 $background1: hsl(222, 26%, 31%);
@@ -15,8 +15,6 @@ $deleteshadow1: hsl(224, 28%, 35%);
 
 $equalskey1: hsl(6, 63%, 50%);
 $equalskeyshadow1: hsl(6, 70%, 34%);
-
-
 
 *,
 *::after,
@@ -61,7 +59,7 @@ body {
   color: #fff;
   border: none;
   background-color: $screenbg1;
-  border-radius: 5px;
+  border-radius: 8px;
   margin-bottom: 2.5rem;
 
   &:focus {
@@ -69,14 +67,65 @@ body {
   }
 }
 
+.keypad {
+  background-color: $keypadbg1;
+  padding: 2rem;
+  display: grid;
+  grid-gap: 1.2rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  border-radius: 8px;
+  grid-template-areas:
+    ". . . ."
+    ". . . ."
+    ". . . ."
+    ". . . ."
+    "reset reset equals equals";
 
+  &__buttons {
+    font-family: inherit;
+    padding: 1.4rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    background-color: $keybg1;
+    color: $keytext1;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 4px 0px 0px $keyshadow1;
 
+    &:active {
+      box-shadow: none;
+      transform: translateY(4px);
+    }
+    
 
+    &--del {
+      font-weight: 600;
+      font-size: 1.5rem;
+      background-color: $deletebg1;
+      box-shadow: 0 4px 0px 0px $deleteshadow1;
+      color: #fff;
+    }
 
+    &--reset {
+      grid-area: reset;
+      font-size: 1.5rem;
+      font-weight: 600;
+      background-color: $deletebg1;
+      box-shadow: 0 4px 0px 0px $deleteshadow1;
+      color: #fff;
+    }
 
-
-
-
+    &--equals {
+      grid-area: equals;
+      font-size: 1.5rem;
+      font-weight: 600;
+      background-color: $equalskey1;
+      box-shadow: 0 4px 0px 0px $equalskeyshadow1;
+      color: #fff;
+    }
+  }
+}
 
 .attribution {
   font-size: 11px;

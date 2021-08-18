@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;600;700&display=swap");
 *,
 *::after,
 *::before {
@@ -44,12 +44,81 @@ body {
   color: #fff;
   border: none;
   background-color: #182034;
-  border-radius: 5px;
+  border-radius: 8px;
   margin-bottom: 2.5rem;
 }
 
 .input:focus {
   outline: none;
+}
+
+.keypad {
+  background-color: #232c43;
+  padding: 2rem;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 1.2rem;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[5];
+      grid-template-rows: repeat(5, 1fr);
+  border-radius: 8px;
+      grid-template-areas: ". . . ." ". . . ." ". . . ." ". . . ." "reset reset equals equals";
+}
+
+.keypad__buttons {
+  font-family: inherit;
+  padding: 1.4rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  background-color: #eae3dc;
+  color: #444b5a;
+  border-radius: 8px;
+  border: none;
+  -webkit-box-shadow: 0 4px 0px 0px #b4a597;
+          box-shadow: 0 4px 0px 0px #b4a597;
+}
+
+.keypad__buttons:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px);
+}
+
+.keypad__buttons--del {
+  font-weight: 600;
+  font-size: 1.5rem;
+  background-color: #637097;
+  -webkit-box-shadow: 0 4px 0px 0px #404e72;
+          box-shadow: 0 4px 0px 0px #404e72;
+  color: #fff;
+}
+
+.keypad__buttons--reset {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: reset;
+  font-size: 1.5rem;
+  font-weight: 600;
+  background-color: #637097;
+  -webkit-box-shadow: 0 4px 0px 0px #404e72;
+          box-shadow: 0 4px 0px 0px #404e72;
+  color: #fff;
+}
+
+.keypad__buttons--equals {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-area: equals;
+  font-size: 1.5rem;
+  font-weight: 600;
+  background-color: #d03f2f;
+  -webkit-box-shadow: 0 4px 0px 0px #93261a;
+          box-shadow: 0 4px 0px 0px #93261a;
+  color: #fff;
 }
 
 .attribution {
