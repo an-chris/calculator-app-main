@@ -25,6 +25,15 @@ body {
   margin: 3rem auto;
 }
 
+.top {
+  margin-bottom: 3rem;
+}
+
+.top__title {
+  color: #fff;
+  font-size: 3rem;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
