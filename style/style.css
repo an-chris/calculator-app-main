@@ -69,6 +69,8 @@ body {
   height: 18px;
   background-color: #232c43;
   border-radius: 30px;
+  -webkit-transform: translateY(14px);
+          transform: translateY(14px);
   position: relative;
 }
 
