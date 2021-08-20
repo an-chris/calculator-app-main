@@ -4,7 +4,6 @@
 $background1: hsl(222, 26%, 31%);
 $keypadbg1: hsl(223, 31%, 20%);
 $screenbg1: hsl(224, 36%, 15%);
-$screentext1: hsl(0, 0, 100%);
 
 $keybg1: hsl(30, 25%, 89%);
 $keyshadow1: hsl(28, 16%, 65%);
@@ -16,6 +15,34 @@ $deleteshadow1: hsl(224, 28%, 35%);
 $equalskey1: hsl(6, 63%, 50%);
 $equalskeyshadow1: hsl(6, 70%, 34%);
 
+// Theme 2 colors
+$background2: hsl(0, 0%, 90%);
+$keypadbg2: hsl(0, 5%, 81%);
+$screenbg2: hsl(0, 0%, 93%);
+
+$keybg2: hsl(30, 25%, 89%);
+$keyshadow2: hsl(28, 16%, 65%);
+$keytext2: hsl(60, 10%, 19%);
+
+$deletebg2: hsl(185, 42%, 37%);
+$deleteshadow2: hsl(185, 58%, 25%);
+
+$equalskey1: hsl(25, 98%, 40%)
+$equalskeyshadow1: hsl(25, 99%, 27%);
+
+// Theme 3 colors
+$background1: hsl(268, 75%, 9%);
+$keypadbg1: hsl(268, 71%, 12%);
+
+$keybg1: hsl(281, 89%, 26%);
+$keyshadow1: hsl(285, 91%, 52%);
+$keytext1: hsl(221, 14%, 31%);
+
+$deletebg1: hsl(268, 47%, 21%);
+$deleteshadow1: hsl(290, 70%, 36%);
+
+$equalskey1: hsl(176, 100%, 44%);
+$equalskeyshadow1: hsl(177, 92%, 70%);
 *,
 *::after,
 *::before {
