@@ -41,11 +41,49 @@ body {
 }
 
 .top {
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 3rem;
+  color: #fff;
 
   &__title {
     color: #fff;
     font-size: 3rem;
+    
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &--num {
+      display: flex;
+      justify-content: space-between;
+      cursor: pointer;
+    }
+
+    &--box {
+      width: 60px;
+      height: 18px;
+      background-color: $keypadbg1;
+      border-radius: 30px;
+      transform: translateY(14px);
+    }
+
+    &--box-circle {
+      height: 12px;
+      width: 12px;
+      background-color: $equalskey1;
+      border-radius: 50%;
+      transform: translate(3px, 3px);
+    }
+
+    &--control {
+      transform: translateX(-60px);
+      
+    }
+
   }
 }
 

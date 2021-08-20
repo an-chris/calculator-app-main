@@ -26,12 +26,65 @@ body {
 }
 
 .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-bottom: 3rem;
+  color: #fff;
 }
 
 .top__title {
   color: #fff;
   font-size: 3rem;
+}
+
+.top__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.top__right--num {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  cursor: pointer;
+}
+
+.top__right--box {
+  width: 60px;
+  height: 18px;
+  background-color: #232c43;
+  border-radius: 30px;
+  -webkit-transform: translateY(14px);
+          transform: translateY(14px);
+}
+
+.top__right--box-circle {
+  height: 12px;
+  width: 12px;
+  background-color: #d03f2f;
+  border-radius: 50%;
+  -webkit-transform: translate(3px, 3px);
+          transform: translate(3px, 3px);
+}
+
+.top__right--control {
+  -webkit-transform: translateX(-60px);
+          transform: translateX(-60px);
 }
 
 .input {
