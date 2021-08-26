@@ -64,6 +64,10 @@ body {
   cursor: pointer;
 }
 
+.top__right--num p {
+  padding: 0 .5rem;
+}
+
 .top__right--box {
   width: 60px;
   height: 18px;

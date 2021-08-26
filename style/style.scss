@@ -27,22 +27,22 @@ $keytext2: hsl(60, 10%, 19%);
 $deletebg2: hsl(185, 42%, 37%);
 $deleteshadow2: hsl(185, 58%, 25%);
 
-$equalskey1: hsl(25, 98%, 40%)
-$equalskeyshadow1: hsl(25, 99%, 27%);
+$equalskey2: hsl(25, 98%, 40%);
+$equalskeyshadow2: hsl(25, 99%, 27%);
 
 // Theme 3 colors
-$background1: hsl(268, 75%, 9%);
-$keypadbg1: hsl(268, 71%, 12%);
+$background3: hsl(268, 75%, 9%);
+$keypadbg3: hsl(268, 71%, 12%);
 
-$keybg1: hsl(281, 89%, 26%);
-$keyshadow1: hsl(285, 91%, 52%);
-$keytext1: hsl(221, 14%, 31%);
+$keybg3: hsl(281, 89%, 26%);
+$keyshadow3: hsl(285, 91%, 52%);
+$keytext3: hsl(221, 14%, 31%);
 
-$deletebg1: hsl(268, 47%, 21%);
-$deleteshadow1: hsl(290, 70%, 36%);
+$deletebg3: hsl(268, 47%, 21%);
+$deleteshadow3: hsl(290, 70%, 36%);
 
-$equalskey1: hsl(176, 100%, 44%);
-$equalskeyshadow1: hsl(177, 92%, 70%);
+$equalskey3: hsl(176, 100%, 44%);
+$equalskeyshadow3: hsl(177, 92%, 70%);
 *,
 *::after,
 *::before {
@@ -88,6 +88,10 @@ body {
       display: flex;
       justify-content: space-between;
       cursor: pointer;
+
+      p {
+        padding: 0 .5rem;
+      }
     }
 
     &--box {
@@ -195,6 +199,7 @@ body {
     }
   }
 }
+
 
 .attribution {
   font-size: 11px;
