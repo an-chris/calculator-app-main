@@ -66,5 +66,33 @@ themeTwo.addEventListener('click', function() {
 });
 
 themeThree.addEventListener('click', function() {
-  document.querySelector('.top__right--box-circle').style = 'left: 45px;';
+  // body
+  document.body.style = 'background-color: hsl(268, 75%, 9%);'; 
+
+  // top
+  document.querySelector('.top').style = 'color: hsl(52, 100%, 62%)';
+  document.querySelector('.top__right--box-circle').style = 'left: 45px; background-color: hsl(176, 100%, 44%)';
+  document.querySelector('.top__right--box').style = 'background-color: hsl(268, 71%, 12%)';
+
+  // input
+  document.querySelector('.input').style = 'background-color: hsl(268, 71%, 12%); color: hsl(52, 100%, 62%)';
+  
+  // keypad
+  document.querySelector('.keypad').style = 'background-color: hsl(268, 71%, 12%)';
+
+  // keypad buttons
+  const keypadButtons = document.querySelectorAll('.keypad__buttons');
+  for (let i = 0; i < keypadButtons.length; i++) {
+    keypadButtons[i].style.cssText = 'background-color: hsl(268, 47%, 21%); color: hsl(52, 100%, 62%); box-shadow: 0 4px 0 0 hsl(290, 70%, 36%);';
+  };
+
+  // delete and reset buttons
+  document.querySelector('.keypad__buttons--del').style = 'background-color: hsl(281, 89%, 26%); box-shadow: 0 4px 0 0 hsl(285, 91%, 52%)';
+  document.querySelector('.keypad__buttons--reset').style = 'background-color: hsl(281, 89%, 26%); box-shadow: 0 4px 0 0 hsl(285, 91%, 52%)';
+  
+  // equal button
+  document.querySelector('.keypad__buttons--equals').style = 'background-color: hsl(176, 100%, 44%); box-shadow: 0 4px 0 0 hsl(177, 92%, 70%)';
+
+  // attribution 
+  document.querySelector('.attribution').style = 'color: hsl(52, 100%, 62%)';
 });
