@@ -14,15 +14,39 @@ html {
   font-size: 62.5%;
 }
 
+@media (min-width: 62.5em) {
+  html {
+    font-size: 70%;
+  }
+}
+
 body {
   font-family: "Spartan", sans-serif;
   font-weight: 700;
   background-color: #3a4764;
+  height: 100vh;
+}
+
+@media (min-width: 62.5em) {
+  body {
+    position: relative;
+  }
 }
 
 .container {
   width: 85%;
   margin: 3rem auto;
+}
+
+@media (min-width: 62.5em) {
+  .container {
+    width: 70%;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
 }
 
 .top {
@@ -186,6 +210,11 @@ body {
   font-weight: 400;
   margin-top: 5rem;
   color: #fff;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .attribution a {
