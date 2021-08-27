@@ -4,15 +4,22 @@ const themeOne = document.getElementById('theme-one');
 const themeTwo = document.getElementById('theme-two');
 const themeThree = document.getElementById('theme-three');
 
+// Keypad buttons
+const del = document.querySelector('.keypad__buttons--del');
+const reset = document.querySelector('.keypad__buttons--reset');
+const equals = document.querySelector('.keypad__buttons--equals');
+const add = document.querySelector('.keypad__buttons--add');
+const subtract = document.querySelector('.keypad__buttons--subtract');
+const divide = document.querySelector('.keypad__buttons--divide');
+const multiply = document.querySelector('.keypad__buttons--multiply');
+
 themeOne.addEventListener('click', function() {
   document.body.style = 'background-color: hsl(222, 26%, 31%)'; // Body bg color
   document.querySelector('.top').style = 'color: #fff'; // text color for top class
   document.querySelector('.top__right--box-circle').style = 'left: 3px;';
   document.querySelector('.top__right--box-circle').style = 'background-color: hsl(6, 63%, 50%)'; // switch circle
   document.querySelector('.top__right--box').style = 'background-color: hsl(223, 31%, 20%)'; // switch background
-
   document.querySelector('.input').style = 'background-color: hsl(224, 36%, 15%); color: #fff'; // screen bg and text color
-
   document.querySelector('.keypad').style = 'background-color: hsl(223, 31%, 20%)'; // Keypad bg
   
   // Keypad buttons
@@ -96,3 +103,4 @@ themeThree.addEventListener('click', function() {
   // attribution 
   document.querySelector('.attribution').style = 'color: hsl(52, 100%, 62%)';
 });
+
