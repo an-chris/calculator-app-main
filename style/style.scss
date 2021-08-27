@@ -64,6 +64,10 @@ html {
   @media (min-width: $tablet) {
     font-size: 70%;
   }
+
+  @media (min-width: $desktop) {
+    font-size: 90%;
+  }
 }
 
 body {
@@ -71,22 +75,23 @@ body {
   font-weight: 700;
   background-color: $background1;
   height: 100vh;
-  @media (min-width: $tablet) {
-    position: relative;
-  }
+  position: relative;
 }
 
 .container {
   width: 85%;
   margin: 3rem auto;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
   @media (min-width: $tablet) {
     width: 70%;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    
+  }
+
+  @media (min-width: $desktop) {
+    width: 45%;
   }
 }
 
@@ -122,6 +127,10 @@ body {
       border-radius: 30px;
       transform: translateY(14px);
       position: relative;
+
+      @media (min-width: $desktop) {
+        transform: translate(4px, 15px);
+      }
     }
 
     &--box-circle {
@@ -137,7 +146,6 @@ body {
 
     &--control {
       transform: translateX(-60px);
-      
     }
 
   }
