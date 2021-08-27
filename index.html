@@ -24,27 +24,27 @@
           <p>THEME</p>
         </div>
       </div>
-       
-      
     </section>
-  
-    <input type="number" class="input">
+    
+    <form name = "calc">
+      <input type="number" class="input" name="number">
+    </form>
   
     <section class="keypad">
-      <button class="keypad__buttons">7</button>
-      <button class="keypad__buttons">8</button>
-      <button class="keypad__buttons">9</button>
+      <button class="keypad__buttons" onclick="document.calc.number.value+='7'">7</button>
+      <button class="keypad__buttons" onclick="document.calc.number.value+='8'">8</button>
+      <button class="keypad__buttons" onclick="document.calc.number.value+='9'">9</button>
       <button class="keypad__buttons keypad__buttons--del">DEL</button>
-      <button class="keypad__buttons">4</button>
-      <button class="keypad__buttons">5</button>
-      <button class="keypad__buttons">6</button>
+      <button class="keypad__buttons" onclick="document.calc.number.value+='4'">4</button>
+      <button class="keypad__buttons" onclick="document.calc.number.value+='5'">5</button>
+      <button class="keypad__buttons" onclick="document.calc.number.value+='6'">6</button>
       <button class="keypad__buttons keypad__buttons--division">÷</button>
-      <button class="keypad__buttons">1</button>
-      <button class="keypad__buttons">2</button>
-      <button class="keypad__buttons">3</button>
+      <button class="keypad__buttons" onclick="document.calc.number.value+='1'">1</button>
+      <button class="keypad__buttons" onclick="document.calc.number.value+='2'">2</button>
+      <button class="keypad__buttons" onclick="document.calc.number.value+='3'">3</button>
       <button class="keypad__buttons keypad__buttons--subtraction">-</button>
       <button class="keypad__buttons">.</button>
-      <button class="keypad__buttons">0</button>
+      <button class="keypad__buttons" onclick="document.calc.number.value+='0'">0</button>
       <button class="keypad__buttons keypad__buttons--fraction">/</button>
       <button class="keypad__buttons keypad__buttons--multiplication">x</button>
       <button class="keypad__buttons keypad__buttons--reset">RESET</button>
