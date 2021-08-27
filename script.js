@@ -104,3 +104,8 @@ themeThree.addEventListener('click', function() {
   document.querySelector('.attribution').style = 'color: hsl(52, 100%, 62%)';
 });
 
+del.addEventListener('click', function() {
+  const num = document.querySelector('input').value;
+  document.querySelector('input').value = num.substr(0, num.length-1);
+});
+
