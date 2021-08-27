@@ -106,6 +106,10 @@ themeThree.addEventListener('click', function() {
 
 del.addEventListener('click', function() {
   const num = document.querySelector('input').value;
-  document.querySelector('input').value = num.substr(0, num.length-1);
+  document.querySelector('input').value = num.substr(0, num.length - 1);
+});
+
+reset.addEventListener('click', function() {
+  document.calc.number.value = '';
 });
 
