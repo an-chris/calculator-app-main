@@ -114,8 +114,31 @@ del.addEventListener('click', function() {
 
 reset.addEventListener('click', function() {
   document.calc.number.value = '';
+ 
 });
 
-add.addEventListener('click', function() {
-  document.querySelector('.input').textContent = '';
+// +
+add.addEventListener('click', function(e) {
+  document.calc.number.value = document.calc.number.value + '+';
 });
+
+// -
+subtract.addEventListener('click', function() {
+  document.calc.number.value = document.calc.number.value + '-';
+});
+
+// *
+multiply.addEventListener('click', function() {
+  document.calc.number.value = document.calc.number.value + '*';
+});
+
+// /
+divide.addEventListener('click', function() {
+  document.calc.number.value = document.calc.number.value + '/';
+});
+
+// =
+equals.addEventListener('click', function() {
+  document.calc.number.value = eval(calc.number.value);
+});
+
