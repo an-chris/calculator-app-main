@@ -13,6 +13,9 @@ const subtract = document.querySelector('.keypad__buttons--subtract');
 const divide = document.querySelector('.keypad__buttons--divide');
 const multiply = document.querySelector('.keypad__buttons--multiply');
 
+// Input
+const input = document.querySelector('.input');
+
 themeOne.addEventListener('click', function() {
   document.body.style = 'background-color: hsl(222, 26%, 31%)'; // Body bg color
   document.querySelector('.top').style = 'color: #fff'; // text color for top class
@@ -113,3 +116,6 @@ reset.addEventListener('click', function() {
   document.calc.number.value = '';
 });
 
+add.addEventListener('click', function() {
+  document.querySelector('.input').textContent = '';
+});

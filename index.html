@@ -27,7 +27,7 @@
     </section>
     
     <form name = "calc">
-      <input type="number" class="input" name="number">
+      <input type="text" class="input" name="number">
     </form>
   
     <section class="keypad">
@@ -43,7 +43,7 @@
       <button class="keypad__buttons" onclick="document.calc.number.value+='2'">2</button>
       <button class="keypad__buttons" onclick="document.calc.number.value+='3'">3</button>
       <button class="keypad__buttons keypad__buttons--subtract">-</button>
-      <button class="keypad__buttons">.</button>
+      <button class="keypad__buttons keypad__buttons--decimal" onclick="document.calc.number.value+='.'">.</button>
       <button class="keypad__buttons" onclick="document.calc.number.value+='0'">0</button>
       <button class="keypad__buttons keypad__buttons--divide">/</button>
       <button class="keypad__buttons keypad__buttons--multiply">x</button>
